@@ -4,8 +4,8 @@ import s from './TextBlinds.module.scss';
 interface ITextBlindsProps {
   text: string;
   percentage: number;
-  background: string;
-  foreground: string;
+  background?: string;
+  foreground?: string;
 }
 
 export const TextBlinds: FC<ITextBlindsProps> = ({ text, percentage, background, foreground }) => {
@@ -25,12 +25,12 @@ export const TextBlinds: FC<ITextBlindsProps> = ({ text, percentage, background,
 
   return (
     <div className={s.TextBlinds}>
-      <div className={`${s.foregroundText} ${percentage > 100 ? s.foregroundMax : ''}`} style={{ color: foreground }}>
+      <div className={`${s.foregroundText} ${percentage > 100 ? s.foregroundMax : ''}`} style={foreground ? { color: foreground } : {}}>
         {foregroundText.split('').map((word, i) => (
           <span key={i}>{word}</span>
         ))}
       </div>
-      <div className={s.backgroundText} style={{ color: background }}>
+      <div className={s.backgroundText} style={background ? { color: background } : {}}>
         {backgroundText}
       </div>
     </div>
