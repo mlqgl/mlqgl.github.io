@@ -7,7 +7,7 @@ import { Header, Footer } from '~/uikit';
 function App() {
   
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <div className={s.App}>
         <Header />
 
