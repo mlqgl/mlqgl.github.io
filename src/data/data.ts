@@ -5,9 +5,7 @@ const home_page_data = {
     title1: "Hello. I’m Denis.",
     title2: "A Product Designer",
     text: `
-      Over 15 years of experience in designing and developing digital products. 
-      I solve complex problems using simple methods.
-      I value interaction and flexibility, and avoiding unnecessary complications and bureaucracy.`
+      I ship products, crack complex problems, and pick the smartest way forward`
   },
   slides_title: [
     "Research and Ideation.",
@@ -110,7 +108,7 @@ export const data = {
     'focusing',
     'design'
   ],
-  scrambledValuesHome: ['Digital', 'UX/UI', 'Mobile', 'Research', 'System'],
+  scrambledValuesHome: ['Simplicity', 'rapid execution', 'deep analysis', 'working hypotheses', 'thorough elaboration'],
 
   heroPhrases: [
     'User-friendly, intuitive, and enjoyable digital platforms',

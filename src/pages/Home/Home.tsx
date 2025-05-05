@@ -96,8 +96,10 @@ export const Home = () => {
 
         <div className={s.hero} ref={scrollingColumn}>
 
-          <div className={s.titleLabel}>
-            <ScrambledText value={scrambledValues} slideLength={10000} postAnimate postAnimateSensetivity={100} />
+          <div className="mb-5">
+            <div className={s.titleLabel}>
+              <ScrambledText value={scrambledValues} slideLength={10000} postAnimate postAnimateSensetivity={100} />
+            </div>
           </div>
 
           <h1 className={s.heroTitle}>
