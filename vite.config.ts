@@ -15,6 +15,7 @@ export default defineConfig({
       '~': path.resolve(__dirname, './src/'),
     },
   },
+  base: 'mlqgl.github.io',
   server: {
     port: 1982,
   },
