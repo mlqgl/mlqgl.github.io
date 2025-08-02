@@ -1,6 +1,6 @@
 import {IDescriptionBlock} from "~/uikit";
 
-export const headDataDescription: IDescriptionBlock[] = [{
+export const headData: IDescriptionBlock[] = [{
   title: "Technical Development",
   items: [
     "Cards issuance process",

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import s from './b2bcards.module.scss';
 import { GalleryImage, SectionHead, SectionSeparator } from '~/uikit';
-import { headDataDescription } from './b2b-head-data';
+import { headData } from './b2b-data';
 import { b2bImages } from "./b2b-images.ts";
 import { moveElementToFront } from "~/helpers";
 
@@ -15,11 +15,11 @@ export const B2bCardsSection: FC<B2bCardsSectionProps> = ({ sectionNumber }) => 
     <SectionSeparator/>
 
     <div className="mb-5">
-      <SectionHead number={sectionNumber} description={headDataDescription}/>
+      <SectionHead number={sectionNumber} description={headData}/>
     </div>
 
     <div className="row mb-5">
-      <div className="offset-xl-8 col-xl-16">
+      <div className="col-xl-16">
         <h2 className={s.title}>B2B Cards. Issuing payment cards and provides solutions enabling clients to launch their own card programs</h2>
       </div>
     </div>
@@ -77,23 +77,6 @@ export const B2bCardsSection: FC<B2bCardsSectionProps> = ({ sectionNumber }) => 
           previewImage={b2bImages[3]}
         />
       </div>
-
-
-      {/*<div className="col-md-12">*/}
-      {/*  <GalleryImage*/}
-      {/*    noFrame={true}*/}
-      {/*    images={moveElementToFront(b2bImages, 1)}*/}
-      {/*    previewImage={b2bImages[1]}*/}
-      {/*  />*/}
-      {/*</div>*/}
-
-      {/*<div>*/}
-      {/*  <GalleryImage*/}
-      {/*    noFrame={true}*/}
-      {/*    images={moveElementToFront(b2bImages, 2)}*/}
-      {/*    previewImage={b2bImages[2]}*/}
-      {/*  />*/}
-      {/*</div>*/}
 
 
     </div>

@@ -9,15 +9,15 @@ const home_page_data = {
   },
   slides_title: [
     "Research and Ideation.",
-    "Prototyping and design.",
-    "Development and testing.",
-    "Feedback and Iteration."
+    "Prototyping and Design.",
+    "Development and Testing.",
+    "Support and Improvement"
   ],
   slider_text: [
-    "Understand the target audience, analyze the competitive landscape. Generate ideas and concepts, explore potential solutions.",
-    "Testing and gathering feedback. Improvements based on testing. Visual elements and layout. Seamless and enjoyable user journey.",
-    "Implement the UI design, integration. Check the user stories and test cases, ensure the product meets users expectations.",
-    "Continuously monitor the product, collect user feedback, make continuous improvements based on feedback and changing requirements."
+    "Analysis, hypothesis generation, exploring options and ideas.",
+    "Creating prototypes, testing ideas, discussing options with stakeholders.",
+    "Iterative development, aligning with expectations, testing and quality assurance.",
+    "Collecting feedback, continuous improvement."
   ],
   slide_tags: [
     ["User Stories", "Moodboard", "Mind Maps", "User Journey Maps", "Characters Creation", "Empathy Cards", "Problem Statement"],

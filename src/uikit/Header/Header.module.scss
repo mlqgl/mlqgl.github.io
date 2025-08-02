@@ -27,7 +27,7 @@
   font-weight: 400;
 
   .HeaderTitleEmphasis {
-    color: var(--color-text-emphasis);
+    color: var(--color-text-placeholder);
     padding-left: 0.5rem;
     @include media-breakpoint-down(md) {
       display: block;

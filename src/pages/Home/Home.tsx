@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { RiArrowRightLine } from "react-icons/ri";
 import { ScrambledText } from '@kamrade/react-scrambled-text';
 import { Typewriter, AnimatedCircle, TextBlinds } from '~/uikit';
 import { useScroll, useWindowSize } from '~/hooks';
@@ -96,7 +97,7 @@ export const Home = () => {
 
         <div className={s.hero} ref={scrollingColumn}>
 
-          <div className="mb-5">
+          <div style={{ marginBottom: "8rem" }}>
             <div className={s.titleLabel}>
               <ScrambledText value={scrambledValues} slideLength={10000} postAnimate postAnimateSensetivity={100} />
             </div>
@@ -108,11 +109,15 @@ export const Home = () => {
           </h1>
 
           <div className={s.heroText}>
-            <div className="row">
-              <div className="col-lg-12">
-                {heroText.text}
+            <div className="mb-5">
+              <div className="row">
+                <div className="col-lg-12">
+                  {heroText.text}
+                </div>
               </div>
             </div>
+            <a href="/about" className={s.cvButton}>Check CV here<RiArrowRightLine /></a>
+            
           </div>
 
 
