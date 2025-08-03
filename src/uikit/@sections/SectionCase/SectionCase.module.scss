@@ -1,0 +1,68 @@
+@import "~/styles/variables";
+@import "~/styles/colors";
+
+.sectionCaseIndex {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: .5em;
+  padding: .125em .25em;
+  background: var(--color-bg-emp-100);
+  color: var(--color-text-body-inv);
+  //text-align: center;
+}
+
+.sectionCaseTitle {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5em;
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+  }
+}
+
+.sectionCaseDescription {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--color-text-placeholder);
+}
+
+.sectionDescription2 {
+
+}
+
+.sectionCaseBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.sectionCaseBadge {
+  padding: 2px 8px;
+  background: var(--color-bg-inv-100);
+  color: var(--color-text-body-inv);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.sectionCaseQuoteBlock {
+  padding: 1.5rem;
+  background: var(--color-bg-inv-100);
+  color: var(--color-text-body-inv);
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.sectionCaseList {
+  padding-left: 1rem;
+}
+
+.sectionCaseSubTitle {
+  font-weight: 500;
+}

@@ -1,12 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { RiArrowRightLine } from "react-icons/ri";
 import { ScrambledText } from '@kamrade/react-scrambled-text';
-import { Typewriter, AnimatedCircle, TextBlinds } from '~/uikit';
+import { Typewriter, AnimatedCircle, TextBlinds, SectionCase, SectionSeparator } from '~/uikit';
 import { useScroll, useWindowSize } from '~/hooks';
 import s from './Home.module.scss';
-import { PortfolioSection } from './PortfolioSection.tsx';
+// import { PortfolioSection } from './PortfolioSection.tsx';
 import { GallerySection } from './GallerySection.tsx';
 import { data } from '~/data';
+import { casesData, type ISectionCase } from '~/data';
 
 
 const heroText = data.home_page_data.hero_text;
@@ -167,9 +168,15 @@ export const Home = () => {
 
       </div>
 
+      {casesData.map((caseData: ISectionCase, index) => {
+        return <div key={index}><SectionCase index={index} sectionCaseData={caseData} /></div>
+      })}
+
+      <SectionSeparator/>
       <GallerySection />
 
-      <PortfolioSection />
+      {/*<PortfolioSection />*/}
+
 
       <div className={s.BackgroundPattern}></div>
 
