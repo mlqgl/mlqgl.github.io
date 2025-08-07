@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
+import { Link } from "react-router-dom";
 import { RiArrowRightLine } from "react-icons/ri";
 import { ScrambledText } from '@kamrade/react-scrambled-text';
 import { Typewriter, AnimatedCircle, TextBlinds, SectionCase, SectionSeparator } from '~/uikit';
 import { useScroll, useWindowSize } from '~/hooks';
 import s from './Home.module.scss';
-// import { PortfolioSection } from './PortfolioSection.tsx';
 import { GallerySection } from './GallerySection.tsx';
 import { data } from '~/data';
 import { casesData, type ISectionCase } from '~/data';
@@ -117,7 +117,7 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-            <a href="/about" className={s.cvButton}>Check CV here<RiArrowRightLine /></a>
+            <Link to="/about" className={s.cvButton}>Check CV here<RiArrowRightLine /></Link>
             
           </div>
 

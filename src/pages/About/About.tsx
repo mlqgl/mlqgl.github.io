@@ -44,7 +44,7 @@ export const About = () => {
 
             {d.experience.list.map((exp, i) => (
 
-              <div key={i}>
+              <div className={"ps-3"} key={i}>
                 <div className={`row ${s.DateOuter}`}>
                   <div className={`col-md-6 pb-5 ${s.DateInner}`}>
                     <div className={s.dates}>{exp.dates}</div>

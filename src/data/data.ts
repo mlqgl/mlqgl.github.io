@@ -90,6 +90,11 @@ const gallery_data: IGalleryImage[] = [{
   alt: 'Calendar. Showcase',
   title: 'iBank. Unlimint fintech.',
   chipText: 'bank, web ui'
+}, {
+  src: '/img/gallery/Infantry.png',
+  alt: 'E-commerce. Website',
+  title: 'Infantry.',
+  chipText: 'e-commerce, web ui'
 }]
 
 

@@ -86,10 +86,13 @@
 }
 
 .quote {
-  font-size: 40px;
+  font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 600;
   margin: 4rem 0;
+  background: var(--color-bg-inv-100);
+  color: var(--color-text-body-inv);
+  padding: 1rem;
 }
 
 .DateInner {
